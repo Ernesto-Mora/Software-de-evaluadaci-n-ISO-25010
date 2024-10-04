@@ -1,8 +1,9 @@
 // middleware/role.js
-const checkRole = (requiredRoles) => {
+const checkRole = (rolesPermitidos) => {
     return (req, res, next) => {
-        if (!requiredRoles.includes(req.userRole)) {
-            return res.status(403).send({ message: 'Acceso denegado.' });
+        const { rol } = req.user;
+        if (!rolesPermitidos.includes(rol)) {
+            return res.status(403).json({ message: 'Acceso denegado.' });
         }
         next();
     };

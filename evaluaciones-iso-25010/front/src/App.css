@@ -1,0 +1,316 @@
+/* Variables de colores */
+:root {
+  --primary-bg: #FFF8E8;
+  --secondary-bg: #F7EED3;
+  --accent-bg: #AAB396;
+  --dark-accent: #674636;
+  --highlight-bg: #F0FFCD;
+  --font-color: #000000;
+  --font-family: 'Arial', sans-serif;
+}
+
+/* Estilos generales */
+body {
+  font-family: var(--font-family);
+  background-color: var(--primary-bg);
+  color: var(--font-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--dark-accent);
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: var(--accent-bg);
+  color: var(--font-color);
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: var(--dark-accent);
+  color: white;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid var(--accent-bg);
+  border-radius: 5px;
+  background-color: var(--highlight-bg);
+}
+
+.container {
+  margin: 20px;
+  padding: 20px;
+  background-color: var(--secondary-bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  background-color: var(--dark-accent);
+  padding: 15px;
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.footer {
+  background-color: var(--dark-accent);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Layouts */
+.dashboard {
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar {
+  background-color: var(--accent-bg);
+  padding: 20px;
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.main-content {
+  margin-left: 270px;
+  padding: 20px;
+}
+
+/* Formularios */
+.form-title {
+  text-align: center;
+  color: var(--dark-accent);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid var(--accent-bg);
+  border-radius: 4px;
+}
+
+.form-group button {
+  margin-top: 20px;
+}
+
+.form-group input[type="submit"] {
+  background-color: var(--accent-bg);
+  color: var(--font-color);
+  cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover {
+  background-color: var(--dark-accent);
+  color: white;
+}
+
+/* Estilos específicos para pantallas */
+.evaluation-form {
+  max-width: 800px;
+  margin: auto;
+  background-color: var(--secondary-bg);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.evaluation-form h2 {
+  text-align: center;
+  color: var(--dark-accent);
+}
+
+.evaluation-form label {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.evaluation-form input,
+.evaluation-form select,
+.evaluation-form textarea {
+  margin-bottom: 15px;
+}
+
+/* Graficas */
+.chart-container {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.chart-header {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--dark-accent);
+}
+
+.comments-carousel {
+  margin-top: 30px;
+  background-color: var(--highlight-bg);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* Modals */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: var(--primary-bg);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.modal-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--dark-accent);
+  margin-bottom: 20px;
+}
+
+.modal-body {
+  margin-bottom: 20px;
+}
+
+.modal-footer {
+  text-align: right;
+}
+
+.modal-footer button {
+  margin-left: 10px;
+}
+
+/* Carrusel */
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+  padding: 10px;
+  background-color: var(--highlight-bg);
+  border-radius: 5px;
+}
+
+.carousel-item {
+  min-width: 200px;
+  padding: 20px;
+  background-color: var(--secondary-bg);
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.carousel-item h4 {
+  margin-bottom: 10px;
+}
+
+.carousel-item p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Login / Register */
+.login-form,
+.register-form {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background-color: var(--secondary-bg);
+  border-radius: 8px;
+}
+
+.login-form h2,
+.register-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-form .form-group,
+.register-form .form-group {
+  margin-bottom: 15px;
+}
+
+.login-form .form-group label,
+.register-form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login-form .form-group input,
+.register-form .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--accent-bg);
+  border-radius: 4px;
+}
+
+.login-form .form-group button,
+.register-form .form-group button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--accent-bg);
+  color: var(--font-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-form .form-group button:hover,
+.register-form .form-group button:hover {
+  background-color: var(--dark-accent);
+  color: white;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+}
