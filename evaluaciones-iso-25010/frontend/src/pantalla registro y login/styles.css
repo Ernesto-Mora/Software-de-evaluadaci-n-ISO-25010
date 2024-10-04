@@ -1,0 +1,99 @@
+/* Fondo de la página */
+body {
+  background-image: url('');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Contenedor principal */
+.registro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.8); /* Color de fondo blanco semi-transparente */
+}
+
+/* Estilo del formulario */
+form {
+  background-color: white; /* Fondo blanco */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Título */
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-family: 'Georgia', serif; /* Fuente serif para darle un toque más elegante */
+  font-weight: bold;
+  color: #333;
+}
+
+/* Campos de entrada */
+input[type="text"], input[type="password"], select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 25px; /* Bordes completamente redondeados */
+  font-size: 16px;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+
+/* Selección del cargo (dropdown) */
+select {
+  background-color: white;
+  font-size: 16px;
+  color: #666;
+}
+
+/* Botón de registro */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #a3b18a;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+/* Estilo del botón cuando se pasa el ratón */
+button:hover {
+  background-color: #8f9b76;
+}
+
+/* Enlace para iniciar sesión */
+a {
+  display: block;
+  margin-top: 10px;
+  color: #666;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* Estilo del enlace cuando se pasa el ratón */
+a:hover {
+  color: #a3b18a;
+  text-decoration: underline;
+}
+
+/* Estilo para los campos de nombre y apellido */
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.inputHalf {
+  width: 48%;
+}

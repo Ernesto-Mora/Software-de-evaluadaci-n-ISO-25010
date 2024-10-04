@@ -1,0 +1,80 @@
+body {
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Contenedor principal */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+  }
+  
+  /* Estilo del formulario */
+  form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Título */
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Campos de entrada */
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 25px; /* Bordes redondeados */
+    font-size: 16px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+  }
+  
+  /* Botón de inicio de sesión */
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #a3b18a;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  /* Hover en el botón */
+  button:hover {
+    background-color: #8f9b76;
+  }
+  
+  /* Enlace para registrarse */
+  a {
+    display: block;
+    margin-top: 10px;
+    color: #666;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #a3b18a;
+    text-decoration: underline;
+  }
+  
