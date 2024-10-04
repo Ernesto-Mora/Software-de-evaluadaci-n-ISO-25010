@@ -1,0 +1,119 @@
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #f5f5f5;
+}
+
+.navbar {
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+}
+
+.navbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+  
+.sidebar {
+    text-align: left;
+    width: 14rem;
+    border-right: 1px solid gray;
+}
+
+.card-1 {
+    width: 20%;
+    margin-bottom: 20px;
+    margin-top: -500px;
+    margin-left: 850px;
+    padding: 20px;
+    background-color: #F0FFCD;
+    color: black;
+    font-family: "Arvo", sans-serif;
+    font-size: 20px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+  
+.card-2 {
+    width: 500px;
+    margin-bottom: 20px;
+    margin-top: -140px;
+    margin-left: 250px;
+    background-color: #8EA364;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Arvo", sans-serif;
+    position: relative;
+    height: 160px;
+    overflow-y: auto;
+}
+  
+.rating-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.rating-list li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+  
+.rating-list h5 {
+    background-color: #F0FFCD;
+    padding: 10px 15px;
+    border-radius: 50px;
+    margin-right: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+  
+.rating-list p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+  
+.card-4::-webkit-scrollbar {
+    width: 10px;
+}
+  
+.card-4::-webkit-scrollbar-thumb {
+    background-color: #2F2F2F;
+    border-radius: 10px;
+}
+  
+.card-4::-webkit-scrollbar-track {
+    background-color: #CCC;
+}
+
+.btn-abort {
+    width: 10%;
+    margin-left: 500px;
+    margin-bottom: 50px;
+}
+
+.btn-register {
+    width: 10%;
+    margin-left: 300px;
+    margin-bottom: 50px;
+}
