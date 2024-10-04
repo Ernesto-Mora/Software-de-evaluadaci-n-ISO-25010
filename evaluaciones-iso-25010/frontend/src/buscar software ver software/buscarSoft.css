@@ -33,7 +33,7 @@ h1 {
     color: black;
     font-family: "Arvo", serif;
     margin: 0;
-    margin-left: 250px;
+    margin-left: 300px;
 }
 
 .container {
@@ -120,6 +120,7 @@ h1 {
 }
 
 .search-bar {
+    margin-left: 900px;
     width: 400px !important;
     padding: 10px;
     font-size: 16px;
