@@ -1,47 +1,45 @@
-/* Fondo de la página */
 body {
-  background-image: url('');
   background-size: cover;
   background-position: center;
   font-family: 'Arial', sans-serif;
 }
 
-/* Contenedor principal */
 .registro-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.8); /* Color de fondo blanco semi-transparente */
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* Estilo del formulario */
 form {
-  background-color: white; /* Fondo blanco */
-  padding: 30px;
+  background-color: white;
+  padding: 60px;
   border-radius: 10px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
   max-width: 400px;
   width: 100%;
+  position:absolute;
   text-align: center;
 }
 
-/* Título */
 h1 {
   font-size: 36px;
-  margin-bottom: 20px;
-  font-family: 'Georgia', serif; /* Fuente serif para darle un toque más elegante */
+  font-family: 'Georgia', serif;
   font-weight: bold;
   color: #333;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-190%);
 }
 
-/* Campos de entrada */
 input[type="text"], input[type="password"], select {
   width: 100%;
   padding: 12px;
   margin-bottom: 10px;
   border: 1px solid #ddd;
-  border-radius: 25px; /* Bordes completamente redondeados */
+  border-radius: 25px;
   font-size: 16px;
   background-color: #f9f9f9;
   box-sizing: border-box;
